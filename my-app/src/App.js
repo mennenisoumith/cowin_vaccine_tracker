@@ -22,13 +22,16 @@ function App() {
         for(i=0;i<arrayData.length;i++){
           var individual_centre = arrayData[i];
           if(individual_centre.min_age_limit === 18 && individual_centre.vaccine === "COVISHIELD"){
-            if(individual_centre.available_capacity_dose1 > 0 ){
+            if(individual_centre.available_capacity_dose1 > 1 ){
               console.log('individual_centre',individual_centre);
               pastCentreDetails=presentCentreDetails;
               presentCentreDetails=individual_centre;
-
+console.log("inside if statemnt")
               // setTimeout(timerCallingFunction, 5000);
+              if(presentCentreDetails.name!==pastCentreDetails.name)
+              console.log('inside sendmail if')
               sendMail();
+              
             }
           }
         }
@@ -46,16 +49,29 @@ function App() {
 
     if(presentCentreDetails.name!==pastCentreDetails.name)
     {
-      let templateParams = {
+      let templateParams1 = {
             from_name: "saisoumith1818@gmail.com",
             to_name:"saisoumith1818@gmail.com",
             subject: "COVID VACCINATION",
-            message: `Hi dummy message${presentCentreDetails.name}`,
+            message: `Hi vaccination opened for centre with name${presentCentreDetails.name}`,
+          }
+          let templateParams2 = {
+            from_name: "saisoumith1818@gmail.com",
+            to_name:"ashishraj3339@gmail.com",
+            subject: "COVID VACCINATION",
+            message: `Hi vaccination opened for centre with name  ${presentCentreDetails.name}`,
           }
           emailjs.send(
             'service_fzf7a84',
             'template_2x34oci',
-            templateParams,
+            templateParams1,
+            'user_tsNRFZzd0abE658TBfDyY',
+            
+          )
+          emailjs.send(
+            'service_fzf7a84',
+            'template_2x34oci',
+            templateParams2,
             'user_tsNRFZzd0abE658TBfDyY',
             
           )
@@ -83,7 +99,7 @@ function App() {
 
   return (
     <div className="App">
-
+{presentCentreDetails? presentCentreDetails:null}
     </div>
   );
 }
