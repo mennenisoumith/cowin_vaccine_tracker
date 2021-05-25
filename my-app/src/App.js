@@ -26,7 +26,7 @@ function App() {
               console.log('individual_centre',individual_centre);
               pastCentreDetails=presentCentreDetails;
               presentCentreDetails=individual_centre;
-console.log("inside if statemnt")
+              console.log("inside if statemnt")
               // setTimeout(timerCallingFunction, 5000);
               if(presentCentreDetails.name!==pastCentreDetails.name)
               console.log('inside sendmail if')
@@ -57,7 +57,7 @@ console.log("inside if statemnt")
           }
           let templateParams2 = {
             from_name: "saisoumith1818@gmail.com",
-            to_name:"ashishraj3339@gmail.com",
+            to_name:"sahithirao163@gmail.com",
             subject: "COVID VACCINATION",
             message: `Hi vaccination opened for centre with name  ${presentCentreDetails.name}`,
           }
@@ -81,9 +81,10 @@ console.log("inside if statemnt")
 
 
   const timerCallingFunction = () => {
-    const apiUrl ="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=294&date=24-05-2021"
+    // const apiUrl ="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/findByDistrict?district_id=294&date=24-05-2021"
+   const apiNizamabad="https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=600&date=25-05-2021"
     axios
-    .get(apiUrl)
+    .get(apiNizamabad)
     .then((response) => {
       // setResponseData(response.data.sessions);
       extractData(response.data.sessions);
@@ -92,6 +93,7 @@ console.log("inside if statemnt")
       console.log(console);
 
     });
+    console.log('calling api again')
     setTimeout(timerCallingFunction, 10000);
   }
 
