@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.273d2291.chunk.css",
-    "main.js": "/static/js/main.564b13f1.chunk.js",
-    "main.js.map": "/static/js/main.564b13f1.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a8c58a5d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a8c58a5d.js.map",
-    "static/css/2.00bb4513.chunk.css": "/static/css/2.00bb4513.chunk.css",
-    "static/js/2.7b09b179.chunk.js": "/static/js/2.7b09b179.chunk.js",
-    "static/js/2.7b09b179.chunk.js.map": "/static/js/2.7b09b179.chunk.js.map",
-    "static/js/3.6471083b.chunk.js": "/static/js/3.6471083b.chunk.js",
-    "static/js/3.6471083b.chunk.js.map": "/static/js/3.6471083b.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.00bb4513.chunk.css.map": "/static/css/2.00bb4513.chunk.css.map",
-    "static/css/main.273d2291.chunk.css.map": "/static/css/main.273d2291.chunk.css.map",
-    "static/js/2.7b09b179.chunk.js.LICENSE.txt": "/static/js/2.7b09b179.chunk.js.LICENSE.txt"
+    "main.css": "/cowin_vaccine_tracker/static/css/main.273d2291.chunk.css",
+    "main.js": "/cowin_vaccine_tracker/static/js/main.e016e4fb.chunk.js",
+    "main.js.map": "/cowin_vaccine_tracker/static/js/main.e016e4fb.chunk.js.map",
+    "runtime-main.js": "/cowin_vaccine_tracker/static/js/runtime-main.b6d773d9.js",
+    "runtime-main.js.map": "/cowin_vaccine_tracker/static/js/runtime-main.b6d773d9.js.map",
+    "static/css/2.00bb4513.chunk.css": "/cowin_vaccine_tracker/static/css/2.00bb4513.chunk.css",
+    "static/js/2.d950fb12.chunk.js": "/cowin_vaccine_tracker/static/js/2.d950fb12.chunk.js",
+    "static/js/2.d950fb12.chunk.js.map": "/cowin_vaccine_tracker/static/js/2.d950fb12.chunk.js.map",
+    "static/js/3.a0c26d19.chunk.js": "/cowin_vaccine_tracker/static/js/3.a0c26d19.chunk.js",
+    "static/js/3.a0c26d19.chunk.js.map": "/cowin_vaccine_tracker/static/js/3.a0c26d19.chunk.js.map",
+    "index.html": "/cowin_vaccine_tracker/index.html",
+    "static/css/2.00bb4513.chunk.css.map": "/cowin_vaccine_tracker/static/css/2.00bb4513.chunk.css.map",
+    "static/css/main.273d2291.chunk.css.map": "/cowin_vaccine_tracker/static/css/main.273d2291.chunk.css.map",
+    "static/js/2.d950fb12.chunk.js.LICENSE.txt": "/cowin_vaccine_tracker/static/js/2.d950fb12.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8c58a5d.js",
+    "static/js/runtime-main.b6d773d9.js",
     "static/css/2.00bb4513.chunk.css",
-    "static/js/2.7b09b179.chunk.js",
+    "static/js/2.d950fb12.chunk.js",
     "static/css/main.273d2291.chunk.css",
-    "static/js/main.564b13f1.chunk.js"
+    "static/js/main.e016e4fb.chunk.js"
   ]
 }
